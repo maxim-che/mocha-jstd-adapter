@@ -28,6 +28,11 @@ For example:
 	test:
     - "your_test_files.js"
 
+Then you must setup Mocha and assertion library like for use in the browser, i.e. tell Mocha which interface you wish to use. A typical setup might look like the following.
+
+	mocha.setup('bdd');
+	expect = chai.expect;
+
 
 Directory Layout
 ----------------
