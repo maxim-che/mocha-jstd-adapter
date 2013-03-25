@@ -10,7 +10,8 @@ Requirements
 ------------
 
  - [JsTestDriver (JSTD)][jstd]
- - [Mocha][mocha] (browser version [mocha.js][mocha.js])
+ - [Mocha][mocha] (browser version – [mocha.js][mocha.js])
+ - Any assertion library (e.g. [Chai][chai]: browser version – [chai.js][chai.js])
 
 Usage
 -----
@@ -49,3 +50,5 @@ Changes
 [jstd-conf]: http://code.google.com/p/js-test-driver/wiki/ConfigurationFile
 [mocha]: https://github.com/visionmedia/mocha 
 [mocha.js]: https://github.com/visionmedia/mocha/blob/master/mocha.js
+[chai]: https://github.com/chaijs/chai
+[chai.js]: https://github.com/chaijs/chai/blob/master/chai.js
