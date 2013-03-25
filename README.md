@@ -43,7 +43,7 @@ Directory Layout
 
 Changes
 -------
- * 0.1 - ? Initial release
+ * 1.0.0 – 2013-03-25 – Initial release
 
 
 [jstd]: http://code.google.com/p/js-test-driver
