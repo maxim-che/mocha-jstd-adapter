@@ -21,7 +21,7 @@ mocha.setup = function (opts) {
 };
 
 var getReporter = function (onTestDone, onComplete) {
-	var Base = mocha.reporters.Base;
+	var Base = Mocha.reporters.Base;
 	var Reporter = function (runner) {
 		var self = this;
 
