@@ -4,22 +4,6 @@
  */
 (function(){
 
-/**
- * Our mocha setup
- */
-var setup = mocha.setup;
-var mochaOptions = {};
-
-mocha.setup = function (opts) {
-	if ('string' === typeof opts) {
-		mochaOptions.ui = opts;
-	} else {
-		mochaOptions = opts;
-	}
-
-	setup.call(mocha, mochaOptions);
-};
-
 var getReporter = function (onTestDone, onComplete) {
 	var Base = Mocha.reporters.Base;
 	var Reporter = function (runner) {
@@ -110,8 +94,7 @@ jstestdriver.pluginRegistrar.register({
 	runTestConfiguration: function (config, onTestDone, onComplete) {
 		if (config.getTestCaseInfo().getType() !== MOCHA_TYPE) return false;
 
-		mochaOptions.reporter = getReporter(onTestDone, onComplete);
-		mocha.setup(mochaOptions);
+		mocha.reporter(getReporter(onTestDone, onComplete));
 		mocha.run();
 		return true;
 	},
