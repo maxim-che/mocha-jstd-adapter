@@ -84,7 +84,10 @@ var getReporter = function (onTestDone, onComplete) {
 	};
 
 	// Inherit from Base.prototype
-	Reporter.prototype.__proto__ = Base.prototype;
+	function F(){};
+	F.prototype = Base.prototype;
+	Reporter.prototype = new F;
+	Reporter.prototype.constructor = Reporter;
 
 	return Reporter;
 };
