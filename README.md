@@ -10,7 +10,7 @@ Requirements
 ------------
 
  - [JsTestDriver (JSTD)][jstd]
- - [Mocha][mocha]
+ - [Mocha][mocha] (browser version [mocha.js][mocha.js])
 
 Usage
 -----
@@ -48,3 +48,4 @@ Changes
 [jstd]: http://code.google.com/p/js-test-driver
 [jstd-conf]: http://code.google.com/p/js-test-driver/wiki/ConfigurationFile
 [mocha]: https://github.com/visionmedia/mocha 
+[mocha.js]: https://github.com/visionmedia/mocha/blob/master/mocha.js
