@@ -1,0 +1,13 @@
+{
+	"name": "mocha-jstd-adapter",
+	"version": "0.1.0",
+	"repo": "wikidi/mocha-jstd-adapter",
+	"description": "Mocha JsTestDriver Adapter",
+	"keywords": ["mocha", "jstd", "test"],
+	"main" : "src/MochaAdapter.js",
+	"dependencies": {
+		"mocha": "~1.4.2"
+	},
+	"devDependencies": {
+		"chai": "~1.5.0"
+	}
